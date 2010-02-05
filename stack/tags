@@ -1,0 +1,82 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+EMPTY_FLAG	stack.h	/^int const EMPTY_FLAG = -1;$/;"	v
+MAX	stack.h	/^int const MAX = 25;   \/\/ The MAX number of elements for the stack$/;"	v
+Overflow	postfix.h	/^  	class Overflow{};$/;"	c	class:postfix	access:public
+Overflow	stack.h	/^  	class Overflow{};$/;"	c	class:stack	access:public
+POSTFIX_H	postfix.h	6;"	d
+Underflow	postfix.h	/^	class Underflow{}; \/\/ used for throwing errors$/;"	c	class:postfix	access:public
+Underflow	stack.h	/^	class Underflow{}; \/\/ used for throwing errors$/;"	c	class:stack	access:public
+clearIt	stack.cpp	/^void stack::clearIt() {$/;"	f	class:stack	signature:()
+clearIt	stack.h	/^    void clearIt();$/;"	p	class:stack	access:public	signature:()
+displayAll	stack.cpp	/^void stack::displayAll() {$/;"	f	class:stack	signature:()
+displayAll	stack.h	/^    void displayAll();$/;"	p	class:stack	access:public	signature:()
+el	stack.h	/^    el_t     el[MAX];       \/\/ el is  an array of el_t's$/;"	m	class:stack	access:private
+el_t	stack.h	/^typedef int el_t;    \/\/ the el_t type is integer$/;"	t
+evaluate	postfix.cpp	/^void postfix::evaluate(string& expression) {$/;"	f	class:postfix	signature:(string& expression)
+evaluate	postfix.h	/^	void evaluate(string& expression);$/;"	p	class:postfix	access:public	signature:(string& expression)
+expression	postfix.h	/^	string expression;$/;"	m	class:postfix	access:private
+isEmpty	stack.cpp	/^bool stack::isEmpty() {$/;"	f	class:stack	signature:()
+isEmpty	stack.h	/^    bool isEmpty();$/;"	p	class:stack	access:public	signature:()
+isFull	stack.cpp	/^bool stack::isFull() {$/;"	f	class:stack	signature:()
+isFull	stack.h	/^    bool isFull();$/;"	p	class:stack	access:public	signature:()
+main	main.cpp	/^int main () {$/;"	f	signature:()
+main	stacktest.cpp	/^int main ()$/;"	f	signature:()
+main	test/driver.cpp	/^int main() {$/;"	f	signature:()
+main	test/stacktest.cpp	/^int main ()$/;"	f	signature:()
+pop	stack.cpp	/^void stack::pop(el_t& n) {$/;"	f	class:stack	signature:(el_t& n)
+pop	stack.h	/^    void pop(el_t&);$/;"	p	class:stack	access:public	signature:(el_t&)
+postfix	postfix.cpp	/^postfix::postfix() {$/;"	f	class:postfix	signature:()
+postfix	postfix.h	/^	postfix();$/;"	p	class:postfix	access:public	signature:()
+postfix	postfix.h	/^class postfix { $/;"	c
+postfix::Overflow	postfix.h	/^  	class Overflow{};$/;"	c	class:postfix	access:public
+postfix::Underflow	postfix.h	/^	class Underflow{}; \/\/ used for throwing errors$/;"	c	class:postfix	access:public
+postfix::evaluate	postfix.cpp	/^void postfix::evaluate(string& expression) {$/;"	f	class:postfix	signature:(string& expression)
+postfix::evaluate	postfix.h	/^	void evaluate(string& expression);$/;"	p	class:postfix	access:public	signature:(string& expression)
+postfix::expression	postfix.h	/^	string expression;$/;"	m	class:postfix	access:private
+postfix::postfix	postfix.cpp	/^postfix::postfix() {$/;"	f	class:postfix	signature:()
+postfix::postfix	postfix.h	/^	postfix();$/;"	p	class:postfix	access:public	signature:()
+postfix::s	postfix.h	/^  	stack s;$/;"	m	class:postfix	access:private
+postfix::~postfix	postfix.cpp	/^postfix::~postfix() {$/;"	f	class:postfix	signature:()
+postfix::~postfix	postfix.h	/^	~postfix();$/;"	p	class:postfix	access:public	signature:()
+push	stack.cpp	/^void stack::push( el_t n )  {$/;"	f	class:stack	signature:( el_t n )
+push	stack.h	/^    void push(el_t);$/;"	p	class:stack	access:public	signature:(el_t)
+s	postfix.h	/^  	stack s;$/;"	m	class:postfix	access:private
+stack	stack.cpp	/^stack::stack() {$/;"	f	class:stack	signature:()
+stack	stack.h	/^    stack();   \/\/ constructor$/;"	p	class:stack	access:public	signature:()
+stack	stack.h	/^class stack { $/;"	c
+stack::Overflow	stack.h	/^  	class Overflow{};$/;"	c	class:stack	access:public
+stack::Underflow	stack.h	/^	class Underflow{}; \/\/ used for throwing errors$/;"	c	class:stack	access:public
+stack::clearIt	stack.cpp	/^void stack::clearIt() {$/;"	f	class:stack	signature:()
+stack::clearIt	stack.h	/^    void clearIt();$/;"	p	class:stack	access:public	signature:()
+stack::displayAll	stack.cpp	/^void stack::displayAll() {$/;"	f	class:stack	signature:()
+stack::displayAll	stack.h	/^    void displayAll();$/;"	p	class:stack	access:public	signature:()
+stack::el	stack.h	/^    el_t     el[MAX];       \/\/ el is  an array of el_t's$/;"	m	class:stack	access:private
+stack::isEmpty	stack.cpp	/^bool stack::isEmpty() {$/;"	f	class:stack	signature:()
+stack::isEmpty	stack.h	/^    bool isEmpty();$/;"	p	class:stack	access:public	signature:()
+stack::isFull	stack.cpp	/^bool stack::isFull() {$/;"	f	class:stack	signature:()
+stack::isFull	stack.h	/^    bool isFull();$/;"	p	class:stack	access:public	signature:()
+stack::pop	stack.cpp	/^void stack::pop(el_t& n) {$/;"	f	class:stack	signature:(el_t& n)
+stack::pop	stack.h	/^    void pop(el_t&);$/;"	p	class:stack	access:public	signature:(el_t&)
+stack::push	stack.cpp	/^void stack::push( el_t n )  {$/;"	f	class:stack	signature:( el_t n )
+stack::push	stack.h	/^    void push(el_t);$/;"	p	class:stack	access:public	signature:(el_t)
+stack::stack	stack.cpp	/^stack::stack() {$/;"	f	class:stack	signature:()
+stack::stack	stack.h	/^    stack();   \/\/ constructor$/;"	p	class:stack	access:public	signature:()
+stack::stackError	stack.h	/^    void stackError(char*); \/\/ utility function for error handling$/;"	p	class:stack	access:private	signature:(char*)
+stack::top	stack.h	/^    int      top;           \/\/ top is index to the top of stack$/;"	m	class:stack	access:private
+stack::topElem	stack.cpp	/^void stack::topElem(el_t& n) {$/;"	f	class:stack	signature:(el_t& n)
+stack::topElem	stack.h	/^    void topElem(el_t&);$/;"	p	class:stack	access:public	signature:(el_t&)
+stack::~stack	stack.cpp	/^stack::~stack() {$/;"	f	class:stack	signature:()
+stack::~stack	stack.h	/^    ~stack();  \/\/ destructor$/;"	p	class:stack	access:public	signature:()
+stackError	stack.h	/^    void stackError(char*); \/\/ utility function for error handling$/;"	p	class:stack	access:private	signature:(char*)
+top	stack.h	/^    int      top;           \/\/ top is index to the top of stack$/;"	m	class:stack	access:private
+topElem	stack.cpp	/^void stack::topElem(el_t& n) {$/;"	f	class:stack	signature:(el_t& n)
+topElem	stack.h	/^    void topElem(el_t&);$/;"	p	class:stack	access:public	signature:(el_t&)
+~postfix	postfix.cpp	/^postfix::~postfix() {$/;"	f	class:postfix	signature:()
+~postfix	postfix.h	/^	~postfix();$/;"	p	class:postfix	access:public	signature:()
+~stack	stack.cpp	/^stack::~stack() {$/;"	f	class:stack	signature:()
+~stack	stack.h	/^    ~stack();  \/\/ destructor$/;"	p	class:stack	access:public	signature:()

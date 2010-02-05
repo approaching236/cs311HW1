@@ -1,0 +1,80 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Overflow	queue.h	/^  class Overflow{};$/;"	c	class:queue	access:public
+QUEUE_H	queue.h	7;"	d
+QUEUE_SIZE	queue.h	/^const int QUEUE_SIZE = 10;  \/\/ this is the max number of elements$/;"	v
+QueueTest	queue_test.cpp	/^class QueueTest : public testing::Test {$/;"	c	file:	inherits:testing::Test
+QueueTest::SetUp	queue_test.cpp	/^  virtual void SetUp() {}$/;"	f	class:QueueTest	access:public	signature:()
+QueueTest::TearDown	queue_test.cpp	/^  virtual void TearDown() {}$/;"	f	class:QueueTest	access:public	signature:()
+SetUp	queue_test.cpp	/^  virtual void SetUp() {}$/;"	f	class:QueueTest	access:public	signature:()
+TEST	queue_test.cpp	/^TEST(QueueTest, add) {$/;"	f	signature:(QueueTest, add)
+TEST	queue_test.cpp	/^TEST(QueueTest, add_failure) {$/;"	f	signature:(QueueTest, add_failure)
+TEST	queue_test.cpp	/^TEST(QueueTest, check_front_underflow) {$/;"	f	signature:(QueueTest, check_front_underflow)
+TEST	queue_test.cpp	/^TEST(QueueTest, constructor) {$/;"	f	signature:(QueueTest, constructor)
+TEST	queue_test.cpp	/^TEST(QueueTest, get_front) {$/;"	f	signature:(QueueTest, get_front)
+TEST	queue_test.cpp	/^TEST(QueueTest, go_to_back) {$/;"	f	signature:(QueueTest, go_to_back)
+TEST	queue_test.cpp	/^TEST(QueueTest, go_to_back_fail) {$/;"	f	signature:(QueueTest, go_to_back_fail)
+TEST	queue_test.cpp	/^TEST(QueueTest, isFull) {$/;"	f	signature:(QueueTest, isFull)
+TEST	queue_test.cpp	/^TEST(QueueTest, modulus_cases) {$/;"	f	signature:(QueueTest, modulus_cases)
+TEST	queue_test.cpp	/^TEST(QueueTest, remove) {$/;"	f	signature:(QueueTest, remove)
+TEST	queue_test.cpp	/^TEST(QueueTest, remove_failure) {$/;"	f	signature:(QueueTest, remove_failure)
+TearDown	queue_test.cpp	/^  virtual void TearDown() {}$/;"	f	class:QueueTest	access:public	signature:()
+Underflow	queue.h	/^  class Underflow{};$/;"	c	class:queue	access:public
+add	queue.cpp	/^void queue::add( el_t n ) {$/;"	f	class:queue	signature:( el_t n )
+add	queue.h	/^  void add(el_t);$/;"	p	class:queue	access:public	signature:(el_t)
+count	queue.h	/^  int  count;          \/\/ how many elements do we have right now?$/;"	m	class:queue	access:private
+displayAll	queue.cpp	/^void queue::displayAll() {$/;"	f	class:queue	signature:()
+displayAll	queue.h	/^  void displayAll();$/;"	p	class:queue	access:public	signature:()
+el	queue.h	/^  el_t el[QUEUE_SIZE]; \/\/ an array called el.$/;"	m	class:queue	access:private
+el_t	queue.h	/^typedef char el_t;          \/\/ el_t is an alias for char$/;"	t
+front	queue.h	/^  int  front;          \/\/ where the front element of the queue is.$/;"	m	class:queue	access:private
+getFront	queue.cpp	/^void queue::getFront(el_t& n) {$/;"	f	class:queue	signature:(el_t& n)
+getFront	queue.h	/^  void getFront(el_t&);$/;"	p	class:queue	access:public	signature:(el_t&)
+getSize	queue.cpp	/^int queue::getSize() {$/;"	f	class:queue	signature:()
+getSize	queue.h	/^  int getSize();$/;"	p	class:queue	access:public	signature:()
+goToBack	queue.cpp	/^void queue::goToBack() {$/;"	f	class:queue	signature:()
+goToBack	queue.h	/^  void goToBack();$/;"	p	class:queue	access:public	signature:()
+isEmpty	queue.cpp	/^bool queue::isEmpty() {$/;"	f	class:queue	signature:()
+isEmpty	queue.h	/^  bool isEmpty();$/;"	p	class:queue	access:public	signature:()
+isFull	queue.cpp	/^bool queue::isFull() {$/;"	f	class:queue	signature:()
+isFull	queue.h	/^  bool isFull();$/;"	p	class:queue	access:public	signature:()
+main	main.cpp	/^int main() {$/;"	f	signature:()
+main	queue_test.cpp	/^int main(int argc, char **argv) {$/;"	f	signature:(int argc, char **argv)
+queue	queue.cpp	/^queue::queue() {$/;"	f	class:queue	signature:()
+queue	queue.h	/^  queue(); \/\/ constructor $/;"	p	class:queue	access:public	signature:()
+queue	queue.h	/^class queue  {$/;"	c
+queue::Overflow	queue.h	/^  class Overflow{};$/;"	c	class:queue	access:public
+queue::Underflow	queue.h	/^  class Underflow{};$/;"	c	class:queue	access:public
+queue::add	queue.cpp	/^void queue::add( el_t n ) {$/;"	f	class:queue	signature:( el_t n )
+queue::add	queue.h	/^  void add(el_t);$/;"	p	class:queue	access:public	signature:(el_t)
+queue::count	queue.h	/^  int  count;          \/\/ how many elements do we have right now?$/;"	m	class:queue	access:private
+queue::displayAll	queue.cpp	/^void queue::displayAll() {$/;"	f	class:queue	signature:()
+queue::displayAll	queue.h	/^  void displayAll();$/;"	p	class:queue	access:public	signature:()
+queue::el	queue.h	/^  el_t el[QUEUE_SIZE]; \/\/ an array called el.$/;"	m	class:queue	access:private
+queue::front	queue.h	/^  int  front;          \/\/ where the front element of the queue is.$/;"	m	class:queue	access:private
+queue::getFront	queue.cpp	/^void queue::getFront(el_t& n) {$/;"	f	class:queue	signature:(el_t& n)
+queue::getFront	queue.h	/^  void getFront(el_t&);$/;"	p	class:queue	access:public	signature:(el_t&)
+queue::getSize	queue.cpp	/^int queue::getSize() {$/;"	f	class:queue	signature:()
+queue::getSize	queue.h	/^  int getSize();$/;"	p	class:queue	access:public	signature:()
+queue::goToBack	queue.cpp	/^void queue::goToBack() {$/;"	f	class:queue	signature:()
+queue::goToBack	queue.h	/^  void goToBack();$/;"	p	class:queue	access:public	signature:()
+queue::isEmpty	queue.cpp	/^bool queue::isEmpty() {$/;"	f	class:queue	signature:()
+queue::isEmpty	queue.h	/^  bool isEmpty();$/;"	p	class:queue	access:public	signature:()
+queue::isFull	queue.cpp	/^bool queue::isFull() {$/;"	f	class:queue	signature:()
+queue::isFull	queue.h	/^  bool isFull();$/;"	p	class:queue	access:public	signature:()
+queue::queue	queue.cpp	/^queue::queue() {$/;"	f	class:queue	signature:()
+queue::queue	queue.h	/^  queue(); \/\/ constructor $/;"	p	class:queue	access:public	signature:()
+queue::rear	queue.h	/^  int  rear;           \/\/ where the rear element of the queue is.$/;"	m	class:queue	access:private
+queue::remove	queue.cpp	/^void queue::remove(el_t& n) {$/;"	f	class:queue	signature:(el_t& n)
+queue::remove	queue.h	/^  void remove(el_t&);$/;"	p	class:queue	access:public	signature:(el_t&)
+queue::~queue	queue.cpp	/^queue::~queue() {  \/* nothing to do. *\/ }$/;"	f	class:queue	signature:()
+queue::~queue	queue.h	/^  ~queue(); \/\/destructor $/;"	p	class:queue	access:public	signature:()
+rear	queue.h	/^  int  rear;           \/\/ where the rear element of the queue is.$/;"	m	class:queue	access:private
+remove	queue.cpp	/^void queue::remove(el_t& n) {$/;"	f	class:queue	signature:(el_t& n)
+remove	queue.h	/^  void remove(el_t&);$/;"	p	class:queue	access:public	signature:(el_t&)
+~queue	queue.cpp	/^queue::~queue() {  \/* nothing to do. *\/ }$/;"	f	class:queue	signature:()
+~queue	queue.h	/^  ~queue(); \/\/destructor $/;"	p	class:queue	access:public	signature:()
