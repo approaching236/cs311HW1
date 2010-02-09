@@ -6,8 +6,12 @@
 #ifndef QUEUE_H
 #define QUEUE_H
 
-typedef char el_t;          // el_t is an alias for char
-const int QUEUE_SIZE = 10;  // this is the max number of elements
+#include <string>
+
+using namespace std;
+
+typedef string el_t;          // el_t is an alias for char
+const int QUEUE_SIZE = 10000;  // this is the max number of elements
 
 class queue  {
  private:

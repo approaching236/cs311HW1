@@ -5,12 +5,20 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 Overflow	queue.h	/^  class Overflow{};$/;"	c	class:queue	access:public
+Overflow	template/queue.h	/^  class Overflow{};$/;"	c	class:queue	access:public
 QUEUE_H	queue.h	7;"	d
+QUEUE_H	template/queue.h	7;"	d
 QUEUE_SIZE	queue.h	/^const int QUEUE_SIZE = 10;  \/\/ this is the max number of elements$/;"	v
+QUEUE_SIZE	template/queue.h	/^const int QUEUE_SIZE = 10;  \/\/ this is the max number of elements$/;"	v
 QueueTest	queue_test.cpp	/^class QueueTest : public testing::Test {$/;"	c	file:	inherits:testing::Test
+QueueTest	template/queue_test.cpp	/^class QueueTest : public testing::Test {$/;"	c	file:	inherits:testing::Test
 QueueTest::SetUp	queue_test.cpp	/^  virtual void SetUp() {}$/;"	f	class:QueueTest	access:public	signature:()
+QueueTest::SetUp	template/queue_test.cpp	/^  virtual void SetUp() {}$/;"	f	class:QueueTest	access:public	signature:()
 QueueTest::TearDown	queue_test.cpp	/^  virtual void TearDown() {}$/;"	f	class:QueueTest	access:public	signature:()
+QueueTest::TearDown	template/queue_test.cpp	/^  virtual void TearDown() {}$/;"	f	class:QueueTest	access:public	signature:()
 SetUp	queue_test.cpp	/^  virtual void SetUp() {}$/;"	f	class:QueueTest	access:public	signature:()
+SetUp	template/queue_test.cpp	/^  virtual void SetUp() {}$/;"	f	class:QueueTest	access:public	signature:()
+T	template/queue.h	/^typedef char T;          \/\/ T is an alias for char$/;"	t
 TEST	queue_test.cpp	/^TEST(QueueTest, add) {$/;"	f	signature:(QueueTest, add)
 TEST	queue_test.cpp	/^TEST(QueueTest, add_failure) {$/;"	f	signature:(QueueTest, add_failure)
 TEST	queue_test.cpp	/^TEST(QueueTest, check_front_underflow) {$/;"	f	signature:(QueueTest, check_front_underflow)
@@ -22,59 +30,125 @@ TEST	queue_test.cpp	/^TEST(QueueTest, isFull) {$/;"	f	signature:(QueueTest, isFu
 TEST	queue_test.cpp	/^TEST(QueueTest, modulus_cases) {$/;"	f	signature:(QueueTest, modulus_cases)
 TEST	queue_test.cpp	/^TEST(QueueTest, remove) {$/;"	f	signature:(QueueTest, remove)
 TEST	queue_test.cpp	/^TEST(QueueTest, remove_failure) {$/;"	f	signature:(QueueTest, remove_failure)
+TEST	template/queue_test.cpp	/^TEST(QueueTest, add) {$/;"	f	signature:(QueueTest, add)
+TEST	template/queue_test.cpp	/^TEST(QueueTest, add_failure) {$/;"	f	signature:(QueueTest, add_failure)
+TEST	template/queue_test.cpp	/^TEST(QueueTest, check_front_underflow) {$/;"	f	signature:(QueueTest, check_front_underflow)
+TEST	template/queue_test.cpp	/^TEST(QueueTest, constructor) {$/;"	f	signature:(QueueTest, constructor)
+TEST	template/queue_test.cpp	/^TEST(QueueTest, get_front) {$/;"	f	signature:(QueueTest, get_front)
+TEST	template/queue_test.cpp	/^TEST(QueueTest, go_to_back) {$/;"	f	signature:(QueueTest, go_to_back)
+TEST	template/queue_test.cpp	/^TEST(QueueTest, go_to_back_fail) {$/;"	f	signature:(QueueTest, go_to_back_fail)
+TEST	template/queue_test.cpp	/^TEST(QueueTest, isFull) {$/;"	f	signature:(QueueTest, isFull)
+TEST	template/queue_test.cpp	/^TEST(QueueTest, modulus_cases) {$/;"	f	signature:(QueueTest, modulus_cases)
+TEST	template/queue_test.cpp	/^TEST(QueueTest, remove) {$/;"	f	signature:(QueueTest, remove)
+TEST	template/queue_test.cpp	/^TEST(QueueTest, remove_failure) {$/;"	f	signature:(QueueTest, remove_failure)
 TearDown	queue_test.cpp	/^  virtual void TearDown() {}$/;"	f	class:QueueTest	access:public	signature:()
+TearDown	template/queue_test.cpp	/^  virtual void TearDown() {}$/;"	f	class:QueueTest	access:public	signature:()
 Underflow	queue.h	/^  class Underflow{};$/;"	c	class:queue	access:public
+Underflow	template/queue.h	/^  class Underflow{};$/;"	c	class:queue	access:public
 add	queue.cpp	/^void queue::add( el_t n ) {$/;"	f	class:queue	signature:( el_t n )
 add	queue.h	/^  void add(el_t);$/;"	p	class:queue	access:public	signature:(el_t)
+add	template/queue.h	/^  void add(T);$/;"	p	class:queue	access:public	signature:(T)
+add	template/queue.h	/^void queue<T>::add( T n ) {$/;"	f	class:queue	signature:( T n )
 count	queue.h	/^  int  count;          \/\/ how many elements do we have right now?$/;"	m	class:queue	access:private
+count	template/queue.h	/^  int  count;          \/\/ how many elements do we have right now?$/;"	m	class:queue	access:private
 displayAll	queue.cpp	/^void queue::displayAll() {$/;"	f	class:queue	signature:()
 displayAll	queue.h	/^  void displayAll();$/;"	p	class:queue	access:public	signature:()
+displayAll	template/queue.h	/^  void displayAll();$/;"	p	class:queue	access:public	signature:()
+displayAll	template/queue.h	/^void queue<T>::displayAll() {$/;"	f	class:queue	signature:()
 el	queue.h	/^  el_t el[QUEUE_SIZE]; \/\/ an array called el.$/;"	m	class:queue	access:private
+el	template/queue.h	/^  T el[QUEUE_SIZE]; \/\/ an array called el.$/;"	m	class:queue	access:private
 el_t	queue.h	/^typedef char el_t;          \/\/ el_t is an alias for char$/;"	t
 front	queue.h	/^  int  front;          \/\/ where the front element of the queue is.$/;"	m	class:queue	access:private
+front	template/queue.h	/^  int  front;          \/\/ where the front element of the queue is.$/;"	m	class:queue	access:private
 getFront	queue.cpp	/^void queue::getFront(el_t& n) {$/;"	f	class:queue	signature:(el_t& n)
 getFront	queue.h	/^  void getFront(el_t&);$/;"	p	class:queue	access:public	signature:(el_t&)
+getFront	template/queue.h	/^  void getFront(T&);$/;"	p	class:queue	access:public	signature:(T&)
+getFront	template/queue.h	/^void queue<T>::getFront(T& n) {$/;"	f	class:queue	signature:(T& n)
 getSize	queue.cpp	/^int queue::getSize() {$/;"	f	class:queue	signature:()
 getSize	queue.h	/^  int getSize();$/;"	p	class:queue	access:public	signature:()
+getSize	template/queue.h	/^  int getSize();$/;"	p	class:queue	access:public	signature:()
+getSize	template/queue.h	/^int queue<T>::getSize() {$/;"	f	class:queue	signature:()
 goToBack	queue.cpp	/^void queue::goToBack() {$/;"	f	class:queue	signature:()
 goToBack	queue.h	/^  void goToBack();$/;"	p	class:queue	access:public	signature:()
+goToBack	template/queue.h	/^  void goToBack();$/;"	p	class:queue	access:public	signature:()
+goToBack	template/queue.h	/^void queue<T>::goToBack() {$/;"	f	class:queue	signature:()
 isEmpty	queue.cpp	/^bool queue::isEmpty() {$/;"	f	class:queue	signature:()
 isEmpty	queue.h	/^  bool isEmpty();$/;"	p	class:queue	access:public	signature:()
+isEmpty	template/queue.h	/^  bool isEmpty();$/;"	p	class:queue	access:public	signature:()
+isEmpty	template/queue.h	/^bool queue<T>::isEmpty() {$/;"	f	class:queue	signature:()
 isFull	queue.cpp	/^bool queue::isFull() {$/;"	f	class:queue	signature:()
 isFull	queue.h	/^  bool isFull();$/;"	p	class:queue	access:public	signature:()
+isFull	template/queue.h	/^  bool isFull();$/;"	p	class:queue	access:public	signature:()
+isFull	template/queue.h	/^bool queue<T>::isFull() {$/;"	f	class:queue	signature:()
+main	gen.cpp	/^int main() {$/;"	f	signature:()
 main	main.cpp	/^int main() {$/;"	f	signature:()
 main	queue_test.cpp	/^int main(int argc, char **argv) {$/;"	f	signature:(int argc, char **argv)
+main	template/queue_test.cpp	/^int main(int argc, char **argv) {$/;"	f	signature:(int argc, char **argv)
 queue	queue.cpp	/^queue::queue() {$/;"	f	class:queue	signature:()
 queue	queue.h	/^  queue(); \/\/ constructor $/;"	p	class:queue	access:public	signature:()
 queue	queue.h	/^class queue  {$/;"	c
+queue	template/queue.h	/^  queue(); \/\/ constructor $/;"	p	class:queue	access:public	signature:()
+queue	template/queue.h	/^queue<T>::queue() {$/;"	f	class:queue	signature:()
+queue	template/queue.h	/^template<class T> class queue  {$/;"	c
 queue::Overflow	queue.h	/^  class Overflow{};$/;"	c	class:queue	access:public
+queue::Overflow	template/queue.h	/^  class Overflow{};$/;"	c	class:queue	access:public
 queue::Underflow	queue.h	/^  class Underflow{};$/;"	c	class:queue	access:public
+queue::Underflow	template/queue.h	/^  class Underflow{};$/;"	c	class:queue	access:public
 queue::add	queue.cpp	/^void queue::add( el_t n ) {$/;"	f	class:queue	signature:( el_t n )
 queue::add	queue.h	/^  void add(el_t);$/;"	p	class:queue	access:public	signature:(el_t)
+queue::add	template/queue.h	/^  void add(T);$/;"	p	class:queue	access:public	signature:(T)
+queue::add	template/queue.h	/^void queue<T>::add( T n ) {$/;"	f	class:queue	signature:( T n )
 queue::count	queue.h	/^  int  count;          \/\/ how many elements do we have right now?$/;"	m	class:queue	access:private
+queue::count	template/queue.h	/^  int  count;          \/\/ how many elements do we have right now?$/;"	m	class:queue	access:private
 queue::displayAll	queue.cpp	/^void queue::displayAll() {$/;"	f	class:queue	signature:()
 queue::displayAll	queue.h	/^  void displayAll();$/;"	p	class:queue	access:public	signature:()
+queue::displayAll	template/queue.h	/^  void displayAll();$/;"	p	class:queue	access:public	signature:()
+queue::displayAll	template/queue.h	/^void queue<T>::displayAll() {$/;"	f	class:queue	signature:()
 queue::el	queue.h	/^  el_t el[QUEUE_SIZE]; \/\/ an array called el.$/;"	m	class:queue	access:private
+queue::el	template/queue.h	/^  T el[QUEUE_SIZE]; \/\/ an array called el.$/;"	m	class:queue	access:private
 queue::front	queue.h	/^  int  front;          \/\/ where the front element of the queue is.$/;"	m	class:queue	access:private
+queue::front	template/queue.h	/^  int  front;          \/\/ where the front element of the queue is.$/;"	m	class:queue	access:private
 queue::getFront	queue.cpp	/^void queue::getFront(el_t& n) {$/;"	f	class:queue	signature:(el_t& n)
 queue::getFront	queue.h	/^  void getFront(el_t&);$/;"	p	class:queue	access:public	signature:(el_t&)
+queue::getFront	template/queue.h	/^  void getFront(T&);$/;"	p	class:queue	access:public	signature:(T&)
+queue::getFront	template/queue.h	/^void queue<T>::getFront(T& n) {$/;"	f	class:queue	signature:(T& n)
 queue::getSize	queue.cpp	/^int queue::getSize() {$/;"	f	class:queue	signature:()
 queue::getSize	queue.h	/^  int getSize();$/;"	p	class:queue	access:public	signature:()
+queue::getSize	template/queue.h	/^  int getSize();$/;"	p	class:queue	access:public	signature:()
+queue::getSize	template/queue.h	/^int queue<T>::getSize() {$/;"	f	class:queue	signature:()
 queue::goToBack	queue.cpp	/^void queue::goToBack() {$/;"	f	class:queue	signature:()
 queue::goToBack	queue.h	/^  void goToBack();$/;"	p	class:queue	access:public	signature:()
+queue::goToBack	template/queue.h	/^  void goToBack();$/;"	p	class:queue	access:public	signature:()
+queue::goToBack	template/queue.h	/^void queue<T>::goToBack() {$/;"	f	class:queue	signature:()
 queue::isEmpty	queue.cpp	/^bool queue::isEmpty() {$/;"	f	class:queue	signature:()
 queue::isEmpty	queue.h	/^  bool isEmpty();$/;"	p	class:queue	access:public	signature:()
+queue::isEmpty	template/queue.h	/^  bool isEmpty();$/;"	p	class:queue	access:public	signature:()
+queue::isEmpty	template/queue.h	/^bool queue<T>::isEmpty() {$/;"	f	class:queue	signature:()
 queue::isFull	queue.cpp	/^bool queue::isFull() {$/;"	f	class:queue	signature:()
 queue::isFull	queue.h	/^  bool isFull();$/;"	p	class:queue	access:public	signature:()
+queue::isFull	template/queue.h	/^  bool isFull();$/;"	p	class:queue	access:public	signature:()
+queue::isFull	template/queue.h	/^bool queue<T>::isFull() {$/;"	f	class:queue	signature:()
 queue::queue	queue.cpp	/^queue::queue() {$/;"	f	class:queue	signature:()
 queue::queue	queue.h	/^  queue(); \/\/ constructor $/;"	p	class:queue	access:public	signature:()
+queue::queue	template/queue.h	/^  queue(); \/\/ constructor $/;"	p	class:queue	access:public	signature:()
+queue::queue	template/queue.h	/^queue<T>::queue() {$/;"	f	class:queue	signature:()
 queue::rear	queue.h	/^  int  rear;           \/\/ where the rear element of the queue is.$/;"	m	class:queue	access:private
+queue::rear	template/queue.h	/^  int  rear;           \/\/ where the rear element of the queue is.$/;"	m	class:queue	access:private
 queue::remove	queue.cpp	/^void queue::remove(el_t& n) {$/;"	f	class:queue	signature:(el_t& n)
 queue::remove	queue.h	/^  void remove(el_t&);$/;"	p	class:queue	access:public	signature:(el_t&)
+queue::remove	template/queue.h	/^  void remove(T&);$/;"	p	class:queue	access:public	signature:(T&)
+queue::remove	template/queue.h	/^void queue<T>::remove(T& n) {$/;"	f	class:queue	signature:(T& n)
 queue::~queue	queue.cpp	/^queue::~queue() {  \/* nothing to do. *\/ }$/;"	f	class:queue	signature:()
 queue::~queue	queue.h	/^  ~queue(); \/\/destructor $/;"	p	class:queue	access:public	signature:()
+queue::~queue	template/queue.h	/^  ~queue(); \/\/destructor $/;"	p	class:queue	access:public	signature:()
+queue::~queue	template/queue.h	/^queue<T>::~queue() {  \/* nothing to do. *\/ }$/;"	f	class:queue	signature:()
 rear	queue.h	/^  int  rear;           \/\/ where the rear element of the queue is.$/;"	m	class:queue	access:private
+rear	template/queue.h	/^  int  rear;           \/\/ where the rear element of the queue is.$/;"	m	class:queue	access:private
 remove	queue.cpp	/^void queue::remove(el_t& n) {$/;"	f	class:queue	signature:(el_t& n)
 remove	queue.h	/^  void remove(el_t&);$/;"	p	class:queue	access:public	signature:(el_t&)
+remove	template/queue.h	/^  void remove(T&);$/;"	p	class:queue	access:public	signature:(T&)
+remove	template/queue.h	/^void queue<T>::remove(T& n) {$/;"	f	class:queue	signature:(T& n)
 ~queue	queue.cpp	/^queue::~queue() {  \/* nothing to do. *\/ }$/;"	f	class:queue	signature:()
 ~queue	queue.h	/^  ~queue(); \/\/destructor $/;"	p	class:queue	access:public	signature:()
+~queue	template/queue.h	/^  ~queue(); \/\/destructor $/;"	p	class:queue	access:public	signature:()
+~queue	template/queue.h	/^queue<T>::~queue() {  \/* nothing to do. *\/ }$/;"	f	class:queue	signature:()
